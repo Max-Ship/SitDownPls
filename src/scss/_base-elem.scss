@@ -1,0 +1,441 @@
+body {
+  font-family: $font-primary, Arial, Verdana, sans-serif;
+  color: $color-gs-black;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 36px;
+  padding-right: 36px;
+  max-width: 1350px;
+  height: 100%;
+}
+
+.main {
+  margin-bottom: 71px;
+}
+
+
+.section {
+  &__title {
+    margin-bottom: 26px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    color: $color-gs-black;
+  }
+}
+
+// скидка
+.tag-discount {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 92px;
+  height: 34px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: $color-gs-white;
+  background: url(img/discount.svg) left (center / contain) no-repeat;
+
+  span {
+    margin-right: 10px;
+  }
+}
+
+// круглая кнопка-иконка со стрелкой вправо
+.btn-icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: background-color 0.2s ease-in-out;
+
+  &::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    border: 2px solid $color-primary;
+    border-radius: 50%;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  }
+
+  svg {
+    stroke: $color-primary;
+    stroke-width: 2;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    fill: transparent;
+    transition: stroke 0.2s ease-in-out;
+  }
+
+  &:focus {
+    background-color: $color-primary;
+
+    svg {
+      stroke: $color-gs-white;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    &:hover {
+      background-color: $color-primary-light;
+
+      svg {
+        stroke: $color-gs-white;
+      }
+    }
+  }
+
+  &:active {
+    background-color: $color-primary-shade;
+
+    &::before {
+      border-color: $color-primary-shade;
+    }
+
+    svg {
+      stroke: $color-gs-white;
+    }
+  }
+}
+
+// кнопки
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  min-height: 60px;
+  border: 2px solid $color-primary;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: $color-gs-white;
+  background-color: $color-primary;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+
+  &:focus {
+    border-color: $color-primary-shade;
+    background-color: $color-primary-light;
+  }
+
+
+  @media screen and (min-width: 1024px) {
+    &:hover {
+      border-color: $color-primary-light;
+      background-color: $color-primary-light;
+    }
+  }
+
+  &:active {
+    border-color: $color-primary-shade;
+    background-color: $color-primary-shade;
+  }
+}
+
+.btn-empty {
+  flex-grow: 0;
+  flex-shrink: 0;
+  min-height: 54px;
+  font-weight: 600;
+  color: $color-primary;
+  background-color: transparent;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+  &:focus {
+    color: $color-gs-white;
+    background-color: $color-primary-light;
+  }
+
+  @media screen and (min-width: 1024px) {
+    &:hover {
+      border-color: $color-primary;
+      color: $color-gs-white;
+      background-color: $color-primary;
+    }
+  }
+
+  &:active {
+    border-color: $color-primary-shade;
+    color: $color-gs-white;
+    background-color: $color-primary-shade;
+  }
+}
+
+.btn-section {
+  margin-top: 32px;
+  width: 296px;
+}
+
+.rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  color: $color-secondary;
+
+  svg {
+    margin-right: 7px;
+    height: 17px;
+    width: 17px;
+    fill: $color-secondary;
+  }
+}
+
+.link-text-icon {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  &__name {
+    margin-right: 5px;
+    border-bottom: 2px solid transparent;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    color: $color-primary;
+    transition: border-bottom 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+
+  &__img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    transition: background-color 0.2s ease-in-out;
+
+    &::before {
+      position: absolute;
+      content: "";
+      inset: 0;
+      border: 2px solid $color-primary;
+      border-radius: 50%;
+      opacity: 1;
+      transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    }
+  }
+
+  svg {
+    stroke: $color-primary;
+    stroke-width: 2;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    fill: transparent;
+    transition: stroke 0.2s ease-in-out;
+  }
+
+  &:focus {
+    .link-text-icon__name {
+      border-bottom-color: $color-primary;
+    }
+
+    .link-text-icon__img {
+      background-color: $color-primary;
+    }
+
+    svg {
+      stroke: $color-gs-white;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    &:hover {
+      .link-text-icon__name {
+        border-bottom-color: $color-primary;
+      }
+
+      .link-text-icon__img {
+        background-color: $color-primary-light;
+      }
+
+      svg {
+        stroke: $color-gs-white;
+      }
+    }
+  }
+
+  &:active {
+    .link-text-icon__name {
+      border-bottom-color: $color-primary-shade;
+      color: $color-primary-shade;
+    }
+
+    .link-text-icon__img {
+      background-color: $color-primary-shade;
+
+      &::before {
+        border-color: $color-primary-shade;
+      }
+    }
+
+    svg {
+      stroke: $color-gs-white;
+    }
+  }
+}
+
+// кастомный чекбокс
+.checkbox {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+
+  label {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 21px;
+      width: 33px;
+      background: url(img/checkbox-empty.svg) left (top / contain) no-repeat;
+    }
+  }
+
+  input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+
+    &:checked+label::before {
+      background-image: url(img/checkbox.svg);
+    }
+  }
+}
+
+// стандартный инпут
+.input {
+  padding: 7px 18px;
+  background-color: $color-gs-grey-light;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    color: $color-gs-grey;
+  }
+
+  &:focus {
+    background-color: $color-gs-grey-md;
+  }
+
+  @media screen and (min-width: 1024px) {
+    &:hover {
+      background-color: $color-primary-bg-light;
+      border-color: $color-primary;
+    }
+  }
+
+  &--valid {
+    border-color: $color-input-ok;
+  }
+
+  &--invalid {
+    border-color: $color-input-error;
+  }
+}
+
+// хлебные крошки
+.breadcrumbs {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: $color-gs-grey;
+
+  &__link {
+    &--active {
+      color: $color-primary-shade;
+    }
+  }
+}
+
+
+@media (max-width: 1023.98px) {
+  .main {
+    margin-bottom: 70px;
+  }
+
+}
+
+
+@media (max-width: 991.98px) {
+  .container {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .container {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  .btn {
+    min-height: 54px;
+    font-weight: 600;
+  }
+
+  .rating {
+    font-size: 12px;
+    color: $color-secondary;
+
+    svg {
+      margin-right: 6px;
+      width: 13px;
+      height: 13px;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .main {
+    margin-bottom: 71px;
+  }
+
+  .section {
+    &__title {
+      font-size: 24px;
+    }
+  }
+
+  .btn {
+    min-height: 40px;
+  }
+
+  .btn-section {
+    align-self: center;
+    width: 100%;
+    max-width: 100%;
+    height: 63px;
+  }
+}

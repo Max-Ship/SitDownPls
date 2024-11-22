@@ -1,0 +1,157 @@
+.high {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 71px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 32px;
+  }
+}
+
+.high-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 30px;
+  max-width: 500px;
+  width: 100%;
+  min-height: 420px;
+  border-radius: 10px;
+  background-color: $color-gs-grey-light;
+
+  &__rating {
+    margin-bottom: 24px;
+  }
+
+  &__photo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: auto -15px 12px -15px;
+    height: 112px;
+
+    img,
+    picture {
+      object-fit: contain;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    color: $color-gs-black;
+  }
+
+  &__price-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-weight: 400;
+  }
+
+  &__price-new {
+    padding-right: 30px;
+    font-size: 18px;
+    line-height: 130%;
+    color: $color-secondary;
+  }
+
+  &__price {
+    font-size: 16px;
+    line-height: 130%;
+    color: $color-gs-grey-shade;
+  }
+
+  &__btn {
+    margin-top: auto;
+    max-width: 128px;
+    max-height: 54px;
+  }
+
+  &__discount {
+    position: absolute;
+    top: 30px;
+    left: 0;
+  }
+
+  &__scheme {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+
+
+@media (max-width: 1351.98px) {
+  .high {
+    &__container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__high-card {
+      &--xl {
+        display: none;
+      }
+    }
+  }
+
+  .high-card {
+    &__price-info {
+      margin-bottom: 17px;
+    }
+
+    &__title {
+      margin-bottom: 21px;
+    }
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .high {
+    &__container {
+      grid-template-columns: repeat(2, minmax(140px, 1fr));
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .high {
+    margin-bottom: 69px;
+
+    &__container {
+      grid-gap: 16px;
+      grid-row-gap: 14px;
+    }
+  }
+
+  .high-card {
+    padding: 16px;
+    padding-top: 18px;
+    min-height: 278px;
+
+    &__photo {
+      margin: auto 0 16px;
+      height: auto;
+      max-height: 31px;
+    }
+
+    &__title {
+      margin-bottom: 16px;
+      font-size: 16px;
+    }
+
+    &__rating {
+      margin-bottom: 29px;
+    }
+  }
+}

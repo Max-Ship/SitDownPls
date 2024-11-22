@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SitDownPls - Лучшая мебель для Вас!</title>
+  <link rel="icon" href="./favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="stylesheet" href="swiper.css">
+
+  <script defer src="swiper.js"></script>
+  <script src="app.js" type="module"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__link-phone-wrap">
+        <a class="header__link-phone" href="tel:+74958854547">
+          <svg>
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
+          <span>+7 (495) 885-45-47</span>
+        </a>
+      </div>
+
+      <ul class="header__menu-corp-list">
+        <li class="header__menu-corp-item"><a href="#">О&nbspкомпании</a></li>
+        <li class="header__menu-corp-item"><a href="#">Гарантия&nbspи&nbspвозврат</a></li>
+        <li class="header__menu-corp-item"><a href="#">Корпоративным&nbspклиентам</a></li>
+        <li class="header__menu-corp-item"><a href="#">Дизайн&#8288решение</a></li>
+      </ul>
+
+      <a class="header__logo-link">
+        <svg class="header__logo-img">
+          <use xlink:href="img/sprite.svg#logo"></use>
+        </svg>
+      </a>
+
+      <nav class="header__nav">
+        <ul class="header__menu-sales-list">
+          <li class="header__menu-sales-item"><a href="catalog.html">Каталог</a></li>
+          <li class="header__menu-sales-item"><a href="#">Магазины</a></li>
+          <li class="header__menu-sales-item"><a href="#">Шоу&#8288рум</a></li>
+          <li class="header__menu-sales-item"><a href="#">Доставка&nbspи&nbspоплата</a></li>
+          <li class="header__menu-sales-item"><a href="#">Дисконт</a></li>
+          <li class="header__menu-sales-item"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="search header__search">
+        <input class="search__input" type="text" placeholder="Я хочу купить...">
+        <svg class="search__icon">
+          <use xlink:href="img/sprite.svg#search"></use>
+        </svg>
+        <button class="btn-icon search__btn">
+          <svg>
+            <use xlink:href="img/sprite.svg#arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="header__user-links">
+        <a class="link-icon link-icon--account header__link" href="#">
+          <svg>
+            <use xlink:href="img/sprite.svg#account"></use>
+          </svg>
+        </a>
+        <a class="link-icon link-icon--basket header__link" href="#">
+          <svg>
+            <use xlink:href="img/sprite.svg#basket"></use>
+          </svg>
+          <div class="link-icon__text">0</div>
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <main class="main">
+    <section class="section banner">
+      <div class="banner-height">
+        <!-- 1 слайд -->
+        <div class="banner__slide banner__slide--1">
+          <div class="banner__container">
+            <div class="container">
+              <h2 class="banner__title banner__title--1">Скидка&nbsp;15% на&nbsp;первую покупку</h2>
+              <button class="btn banner__btn">Получить!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section offers container">
+      <h2 class="section__title">Специальные предложения</h2>
+      <div class="offers__container">
+        <!-- 1 слайд -->
+        <div class="offers-slide offers-slide--1">
+          <div class=" offers-card offers-card-1">
+            <div class="offers-card__photo">
+              <picture>
+                <source srcset="img/offers/offer-1.webp" type="image/webp">
+                <img src="img/offers/offer-1.jpg" alt="Картинка">
+              </picture>
+            </div>
+            <h3 class="offers-card__title">Кресло&nbsp;велюровое “X&#8209;24”</h3>
+            <div class="offers-card__price-info">
+              <p class="offers-card__price-new">15 990 руб</p>
+              <p class="offers-card__price">94 990 руб</p>
+            </div>
+            <a class="btn btn-empty offers-card__btn">Купить</a>
+            <div class="tag-discount offers-card__discount">
+              <span>- 9 000</span>
+            </div>
+          </div>
+        </div>
+        <!-- 2 слайд -->
+        <div class="offers-slide offers-slide--big offers-slide--big-1">
+          <div class="offers-card offers-card--big">
+            <div class="offers-card__photo offers-card__photo--big-1">
+              <picture>
+                <source srcset="img/offers/offer-2.webp" type="image/webp">
+                <img src="img/offers/offer-2.jpg" alt="Картинка">
+              </picture>
+            </div>
+            <h3 class="offers-card__title">Диван тканевый “Z&#8209;44”</h3>
+            <div class="offers-card__price-info">
+              <p class="offers-card__price-new">22 990 руб</p>
+              <p class="offers-card__price">32 990 руб</p>
+            </div>
+            <a class="btn btn-empty offers-card__btn">Купить</a>
+            <div class="tag-discount offers-card__discount">
+              <span>- 10 000</span>
+            </div>
+            <div class="offers-card__scheme">
+              <img src="img/offers/offer-scheme-1.png" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- 3 слайд -->
+        <div class="offers-slide offers-slide--2">
+          <div class="offers-card">
+            <div class="offers-card__photo">
+              <picture>
+                <source srcset="img/offers/offer-3.webp" type="image/webp">
+                <img src="img/offers/offer-3.jpg" alt="Картинка">
+              </picture>
+            </div>
+            <h3 class="offers-card__title">Будильник “Quartz&#8209;23”</h3>
+            <div class="offers-card__price-info">
+              <p class="offers-card__price-new">1 290 руб</p>
+              <p class="offers-card__price">1 890 руб</p>
+            </div>
+            <a class="btn btn-empty offers-card__btn">Купить</a>
+            <div class="tag-discount offers-card__discount">
+              <span>- 600</span>
+            </div>
+          </div>
+        </div>
+        <!-- 4 слайд -->
+        <div class="offers-slide offers-slide--3">
+          <div class="offers-card">
+            <div class="offers-card__photo">
+              <picture>
+                <source srcset="img/offers/offer-4.webp" type="image/webp">
+                <img src="img/offers/offer-4.jpg" alt="Картинка">
+              </picture>
+            </div>
+            <h3 class="offers-card__title">Мини-скульптура “Oh my deer”</h3>
+            <div class="offers-card__price-info">
+              <p class="offers-card__price-new">690 руб</p>
+              <p class="offers-card__price">990 руб</p>
+            </div>
+            <a class="btn btn-empty offers-card__btn">Купить</a>
+            <div class="tag-discount offers-card__discount">
+              <span>- 300</span>
+            </div>
+          </div>
+        </div>
+        <!-- 5 слайд -->
+        <div class="offers-slide offers-slide--big offers-slide--big-2">
+          <div class="offers-card offers-card--big">
+            <div class="offers-card__photo  offers-card__photo--big-2">
+              <picture>
+                <source srcset="img/offers/offer-5.webp" type="image/webp">
+                <img src="img/offers/offer-5.jpg" alt="Картинка">
+              </picture>
+            </div>
+            <h3 class="offers-card__title">Диван вел-флок “Z&#8209;85”</h3>
+            <div class="offers-card__price-info">
+              <p class="offers-card__price-new">22 990 руб</p>
+              <p class="offers-card__price">32 990 руб</p>
+            </div>
+            <a class="btn btn-empty offers-card__btn">Купить</a>
+            <div class="tag-discount offers-card__discount">
+              <span>- 10 000</span>
+            </div>
+            <div class="offers-card__scheme">
+              <img src="img/offers/offer-scheme-2.png" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- 6 слайд -->
+        <div class="offers-slide offers-slide--4">
+          <div class="offers-card">
+            <div class="offers-card__photo">
+              <picture>
+                <source srcset="img/offers/offer-6.webp" type="image/webp">
+                <img src="img/offers/offer-6.jpg" alt="Картинка">
+              </picture>
+            </div>
+            <h3 class="offers-card__title">Термометр + гидрометр “H&#8209;18”</h3>
+            <div class="offers-card__price-info">
+              <p class="offers-card__price-new">1 390 руб</p>
+              <p class="offers-card__price">2 090 руб</p>
+            </div>
+            <a class="btn btn-empty offers-card__btn">Купить</a>
+            <div class="tag-discount offers-card__discount">
+              <span>- 700</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section high container">
+      <h2 class="section__title">
+        Высокий рейтинг
+      </h2>
+      <div class="high__container">
+        <!-- 1 карточка -->
+        <div class="high-card high__high-card">
+          <div class="rating high-card__rating">
+            <svg class="rating__img">
+              <use xlink:href="img/sprite.svg#rating"></use>
+            </svg>
+            <span class="rating__text">5,0</span>
+          </div>
+          <div class="high-card__photo">
+            <picture>
+              <source srcset="img/rating/sofa_01.webp" type="image/webp">
+              <img src="img/rating/sofa_01.jpg" alt="Картинка">
+            </picture>
+          </div>
+          <h3 class="high-card__title">Диван кожаный “R&#8209;94”</h3>
+          <div class="high-card__price-info">
+            <p class="high-card__price">94 990 руб</p>
+          </div>
+          <a class="btn btn-empty high-card__btn" href="#">Купить</a>
+        </div>
+        <!-- 2 карточка -->
+        <div class="high-card high__high-card">
+          <div class="rating high-card__rating">
+            <svg class="rating__img">
+              <use xlink:href="img/sprite.svg#rating"></use>
+            </svg>
+            <span class="rating__text">4,9</span>
+          </div>
+          <div class="high-card__photo">
+            <picture>
+              <source srcset="img/rating/sofa_02.webp" type="image/webp">
+              <img src="img/rating/sofa_02.jpg" alt="Картинка">
+            </picture>
+          </div>
+          <h3 class="high-card__title">Диван апартековый “T&#8209;75”</h3>
+          <div class="high-card__price-info">
+            <p class="high-card__price">69 990 руб</p>
+          </div>
+          <a class="btn btn-empty high-card__btn" href="#">Купить</a>
+        </div>
+        <!-- 3 карточка -->
+        <div class="high-card high__high-card">
+          <div class="rating high-card__rating">
+            <svg class="rating__img">
+              <use xlink:href="img/sprite.svg#rating"></use>
+            </svg>
+            <span class="rating__text">4,8</span>
+          </div>
+          <div class="high-card__photo">
+            <picture>
+              <source srcset="img/rating/sofa_03.webp" type="image/webp">
+              <img src="img/rating/sofa_03.jpg" alt="Картинка">
+            </picture>
+          </div>
+          <h3 class="high-card__title">Диван тканевый “D&#8209;31”</h3>
+          <div class="high-card__price-info">
+            <p class="high-card__price">28 490 руб</p>
+          </div>
+          <a class="btn btn-empty high-card__btn" href="#">Купить</a>
+        </div>
+        <!-- 4 карточка -->
+        <div class="high-card high__high-card">
+          <div class="rating high-card__rating">
+            <svg class="rating__img">
+              <use xlink:href="img/sprite.svg#rating"></use>
+            </svg>
+            <span class="rating__text">4,8</span>
+          </div>
+          <div class="high-card__photo">
+            <picture>
+              <source srcset="img/rating/sofa_04.webp" type="image/webp">
+              <img src="img/rating/sofa_04.jpg" alt="Картинка">
+            </picture>
+          </div>
+          <h3 class="high-card__title">Диван велюровый “Y&#8209;68”</h3>
+          <div class="high-card__price-info">
+            <p class="high-card__price">22 990 руб</p>
+          </div>
+          <a class="btn btn-empty high-card__btn" href="#">Купить</a>
+        </div>
+        <!-- 5 карточка -->
+        <div class="high-card high__high-card">
+          <div class="rating high-card__rating">
+            <svg class="rating__img">
+              <use xlink:href="img/sprite.svg#rating"></use>
+            </svg>
+            <span class="rating__text">4,8</span>
+          </div>
+          <div class="high-card__photo">
+            <picture>
+              <source srcset="img/rating/sofa_05.webp" type="image/webp">
+              <img src="img/rating/sofa_05.jpg" alt="Картинка">
+            </picture>
+          </div>
+          <h3 class="high-card__title">Диван из шинила “W&#8209;95”</h3>
+          <div class="high-card__price-info">
+            <p class="high-card__price">22 990 руб</p>
+          </div>
+          <a class="btn btn-empty high-card__btn" href="#">Купить</a>
+        </div>
+        <!-- 6 карточка -->
+        <div class="high-card high__high-card">
+          <div class="rating high-card__rating">
+            <svg class="rating__img">
+              <use xlink:href="img/sprite.svg#rating"></use>
+            </svg>
+            <span class="rating__text">4,8</span>
+          </div>
+          <div class="high-card__photo">
+            <picture>
+              <source srcset="img/rating/sofa_06.webp" type="image/webp">
+              <img src="img/rating/sofa_06.jpg" alt="Картинка">
+            </picture>
+          </div>
+          <h3 class="high-card__title">Диван флоковый “G&#8209;41”</h3>
+          <div class="high-card__price-info">
+            <p class="high-card__price">17 990 руб</p>
+          </div>
+          <a class="btn btn-empty high-card__btn" href="#">Купить</a>
+        </div>
+        <!-- 7 карточка -->
+        <div class="high-card high__high-card high__high-card--xl">
+          <div class="rating high-card__rating">
+            <svg class="rating__img">
+              <use xlink:href="img/sprite.svg#rating"></use>
+            </svg>
+            <span class="rating__text">4,8</span>
+          </div>
+          <div class="high-card__photo">
+            <picture>
+              <source srcset="img/rating/sofa_07.webp" type="image/webp">
+              <img src="img/rating/sofa_07.jpg" alt="Картинка">
+            </picture>
+          </div>
+          <h3 class="high-card__title">Диван шиниловый “V&#8209;43”</h3>
+          <div class="high-card__price-info">
+            <p class="high-card__price">19 990 руб</p>
+          </div>
+          <a class="btn btn-empty high-card__btn" href="#">Купить</a>
+        </div>
+        <!-- 8 карточка -->
+        <div class="high-card high__high-card high__high-card--xl">
+          <div class="rating high-card__rating">
+            <svg class="rating__img">
+              <use xlink:href="img/sprite.svg#rating"></use>
+            </svg>
+            <span class="rating__text">4,7</span>
+          </div>
+          <div class="high-card__photo">
+            <picture>
+              <source srcset="img/rating/sofa_08.webp" type="image/webp">
+              <img src="img/rating/sofa_08.jpg" alt="Картинка">
+            </picture>
+          </div>
+          <h3 class="high-card__title">Диван велюровый “S&#8209;99”</h3>
+          <div class="high-card__price-info">
+            <p class="high-card__price">19 990 руб</p>
+          </div>
+          <a class="btn btn-empty high-card__btn" href="#">Купить</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section adv">
+      <div class="container adv__container">
+        <h2 class="adv__title">
+          Оксфорд 1950
+        </h2>
+        <div class="adv__text">
+          Новая коллекция изысканных кресел
+        </div>
+        <a class="btn adv__btn">
+          Ознакомиться
+        </a>
+      </div>
+    </section>
+
+
+    <section class="section top">
+      <div class="container">
+        <h2 class="section__title">
+          Топ категории
+        </h2>
+        <div class="top__container">
+          <!-- 1 карточка -->
+          <div class="top-card top__card top__card--1">
+            <ul class="top-card__categ-list">
+              <li class="top-card__categ-item">Прямые</li>
+              <li class="top-card__categ-item">Угловые</li>
+              <li class="top-card__categ-item">Модульные</li>
+            </ul>
+            <h3 class="top-card__title">
+              <span>Диваны</span>
+              <a class="btn-icon top-card__btn-icon">
+                <svg>
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+              </a>
+            </h3>
+            <div class="top-card__photo">
+              <picture>
+                <source srcset="img/top/top_01.webp">
+                <img src="img/top/top_01.png" alt="Фото">
+              </picture>
+            </div>
+            <a class="link-text-icon top-card__btn">
+              <span class="link-text-icon__name">В каталог</span>
+              <span class="link-text-icon__img">
+                <svg>
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+              </span>
+            </a>
+          </div>
+          <!-- 2 карточка -->
+          <div class="top-card top__card top__card--2">
+            <ul class="top-card__categ-list">
+              <li class="top-card__categ-item">Мягкие</li>
+              <li class="top-card__categ-item">Кресла-кровати</li>
+            </ul>
+            <h3 class="top-card__title">
+              <span>Кресла</span>
+              <a class="btn-icon top-card__btn-icon">
+                <svg>
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+              </a>
+            </h3>
+            <div class="top-card__photo correct-position-2">
+              <picture>
+                <source srcset="img/top/top_02.webp">
+                <img src="img/top/top_02.png" alt="Фото">
+              </picture>
+            </div>
+            <a class="link-text-icon top-card__btn">
+              <span class="link-text-icon__name">В каталог</span>
+              <span class="link-text-icon__img">
+                <svg>
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+              </span>
+            </a>
+          </div>
+          <!-- 3 карточка -->
+          <div class="top-card top__card top__card--3">
+            <ul class="top-card__categ-list">
+              <li class="top-card__categ-item">Односпальные</li>
+              <li class="top-card__categ-item">Двуспальные</li>
+            </ul>
+            <h3 class="top-card__title">
+              <span>Кровати</span>
+              <a class="btn-icon top-card__btn-icon">
+                <svg>
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+              </a>
+            </h3>
+            <div class="top-card__photo correct-position-3">
+              <picture>
+                <source srcset="img/top/top_03.webp">
+                <img src="img/top/top_03.png" alt="Фото">
+              </picture>
+            </div>
+            <a class="link-text-icon top-card__btn">
+              <span class="link-text-icon__name">В каталог</span>
+              <span class="link-text-icon__img">
+                <svg>
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+              </span>
+            </a>
+          </div>
+          <!-- 4 карточка -->
+          <div class="top-card top__card top__card--4">
+            <ul class="top-card__categ-list">
+              <li class="top-card__categ-item">Тумбы</li>
+              <li class="top-card__categ-item">Комоды</li>
+            </ul>
+            <h3 class="top-card__title">
+              <span>Тумбы и комоды</span>
+              <a class="btn-icon top-card__btn-icon btn-correct">
+                <svg>
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+              </a>
+            </h3>
+            <div class="top-card__photo correct-position-4">
+              <picture>
+                <source srcset="img/top/top_04.webp">
+                <img src="img/top/top_04.png" alt="Фото">
+              </picture>
+            </div>
+            <a class="link-text-icon top-card__btn">
+              <span class="link-text-icon__name">В каталог</span>
+              <span class="link-text-icon__img">
+                <svg>
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+              </span>
+            </a>
+          </div>
+          <!-- 5 карточка -->
+          <div class="top-card top__card top__card--5">
+            <ul class="top-card__categ-list">
+              <li class="top-card__categ-item">Деревянные</li>
+              <li class="top-card__categ-item">Металлокаркас</li>
+            </ul>
+            <h3 class="top-card__title">
+              <span>Стулья</span>
+              <a class="btn-icon top-card__btn-icon">
+                <svg>
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+              </a>
+            </h3>
+            <div class="top-card__photo correct-position-5">
+              <picture>
+                <source srcset="img/top/top_05.webp">
+                <img src="img/top/top_05.png" alt="Фото">
+              </picture>
+            </div>
+            <a class="link-text-icon top-card__btn">
+              <span class="link-text-icon__name">В каталог</span>
+              <span class="link-text-icon__img">
+                <svg>
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section good">
+      <div class="container">
+        <h2 class="section__title">Полезное</h2>
+        <div class="good__container">
+          <!-- 1 слайд -->
+          <div class="good__slide good__slide--1">
+            <div class="good-card good__card">
+              <div class="good-card__photo good-card__photo--1"></div>
+              <div class="good-card__content">
+                <p class="good-card__text">И нет сомнений, что сделанные на базе интернет-аналитики выводы
+                  представляют
+                  собой не что иное?</p>
+                <a class="good-card__btn">Читать</a>
+              </div>
+            </div>
+          </div>
+          <!-- 2 слайд -->
+          <div class="good__slide good__slide--2">
+            <div class="good-card good__card">
+              <div class="good-card__photo good-card__photo--2"></div>
+              <div class="good-card__content">
+                <p class="good-card__text">Как принято считать, некоторые особенности приносят несомненную пользу
+                  обществу?</p>
+                <a class="good-card__btn">Читать</a>
+              </div>
+            </div>
+          </div>
+          <!-- 3 слайд -->
+          <div class="good__slide good__slide--3">
+            <div class="good-card good__card">
+              <div class="good-card__photo good-card__photo--3"></div>
+              <div class="good-card__content">
+                <p class="good-card__text">Ясность нашей позиции очевидна: укрепление и развитие внутренней структуры?
+                </p>
+                <a class="good-card__btn">Читать</a>
+              </div>
+            </div>
+          </div>
+          <!-- 4 слайд -->
+          <div class="good__slide good__slide--4">
+            <div class="good-card good__card">
+              <div class="good-card__photo good-card__photo--4"></div>
+              <div class="good-card__content">
+                <p class="good-card__text">Прежде всего, консультация с широким активом однозначно фиксирует
+                  необходимость распределения?</p>
+                <a class="good-card__btn">Читать</a>
+              </div>
+            </div>
+          </div>
+          <!-- 5 слайд -->
+          <div class="good__slide good__slide--5">
+            <div class="good-card good__card">
+              <div class="good-card__photo good-card__photo--5"></div>
+              <div class="good-card__content">
+                <p class="good-card__text">Как принято считать, некоторые особенности приносят несомненную пользу
+                  обществу?</p>
+                <a class="good-card__btn">Читать</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section container request">
+      <div class="request__content">
+        <h2 class="section__title request__title">Мы всегда вам рады!</h2>
+        <p class="request__text">
+          Безусловно, новая модель организационной деятельности в значительной степени
+          обусловливает важность распределения внутренних резервов и ресурсов.
+        </p>
+        <form action="#" class="request__form" id="request-form">
+          <div class="request__inputs">
+            <div class="input-wrapper request__input-wrapper">
+              <input type="text" class="input request__input input-fio" id="request-fio" placeholder="Как вас зовут?">
+            </div>
+            <div class="input-wrapper request__input-wrapper">
+              <input type="tel" class="input request__input input-phone" id="request-phone" placeholder="Ваш телефон">
+            </div>
+            <div class="input-wrapper request__input-wrapper">
+              <input type="email" class="input request__input input-email" id="request-email" placeholder="Ваш e-mail">
+            </div>
+          </div>
+          <button class="btn request__btn">Отправить</button>
+          <div class="checkbox request__checkbox">
+            <input type="checkbox" class="request__input-checkbox" id="request-input-checkbox" checked>
+            <label for="request-input-checkbox" class="request__label-checkbox">Принимаю&nbsp;<a
+                href="#">пользовательское соглашение</a></label>
+          </div>
+        </form>
+      </div>
+      <div class="request__image">
+        <picture class="request__image-big">
+          <source srcset="img/form/form-2.webp" media="(max-width: 1023.98px)">
+          <source srcset="img/form/form-1.webp" type="image/webp">
+          <img src="img/form/form-1.png" alt="Картинка">
+        </picture>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__logo-wrapper">
+        <a href="#" class="footer__logo-link">
+          <svg>
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <div class="socials footer__socials">
+          <a href="https://fb.com" class="socials__link" target="blank">
+            <svg>
+              <use xlink:href="img/sprite.svg#ok"></use>
+            </svg>
+          </a>
+          <a href="https://vk.com" class="socials__link" target="blank">
+            <svg>
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__menu-wrapper">
+        <ul class="footer__list-block footer__list-block--1">
+          <li class="footer__list-item footer__list-item--main"><a href="#">О нас</a></li>
+          <li class="footer__list-item"><a href="#">О компании</a></li>
+          <li class="footer__list-item"><a href="#">Блог</a></li>
+        </ul>
+        <ul class="footer__list-block footer__list-block--2">
+          <li class="footer__list-item footer__list-item--main"><a href="#">Услуги</a></li>
+          <li class="footer__list-item"><a href="#">Доставка</a></li>
+          <li class="footer__list-item"><a href="#">Рассрочка и кредит</a></li>
+          <li class="footer__list-item"><a href="#">Сборка и установка</a></li>
+        </ul>
+        <ul class="footer__list-block footer__list-block--3">
+          <li class="footer__list-item footer__list-item--main"><a href="#">Связь с нами</a></li>
+          <li class="footer__list-item"><a href="#">Обратная связь</a></li>
+          <li class="footer__list-item"><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="footer__list-block footer__list-block--4">
+          <li class="footer__list-item footer__list-item--main"><a href="#">Сотрудничество</a></li>
+          <li class="footer__list-item"><a href="#">Поставщикам</a></li>
+          <li class="footer__list-item"><a href="#">Оптовикам</a></li>
+          <li class="footer__list-item"><a href="#">Карьера</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright footer__copyright">
+      SDP<sup class="reg">&reg;</sup> 2011-2021
+    </div>
+  </footer>
+</body>
+
+</html>
